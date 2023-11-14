@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: questrial;
+  src: url("/src/assets/fonts/Questrial-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: VNPro-medi;
+  src: url("/src/assets/fonts/BeVietnamPro-Medium.ttf") format("opentype");
+}
+@font-face {
+  font-family: VNPro-regu;
+  src: url("/src/assets/fonts/BeVietnamPro-Regular.ttf") format("opentype");
+}
+@font-face {
+  font-family: VNPro-semi;
+  src: url("/src/assets/fonts/BeVietnamPro-SemiBold.ttf") format("opentype");
+}
+@font-face {
+  font-family: VNPro-bold;
+  src: url("/src/assets/fonts/BeVietnamPro-Bold.ttf") format("opentype");
+}
+body {
+  background-color: #000300;
+}
