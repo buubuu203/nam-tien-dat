@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -24,10 +24,18 @@ const Navbar = () => {
               to="/home"
             ></NavLink>
           </li>
-          <li className="p-4">Giới thiệu</li>
-          <li className="p-4">Sản phẩm</li>
-          <li className="p-4">Cung cấp than đá</li>
-          <li className="p-4">Liên hệ</li>
+          <li className="p-4">
+            <Link to="/">Giới thiệu</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/">Sản phẩm</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/">Cung cấp than đá</Link>
+          </li>
+          <li className="p-4">
+            <Link to="/">Liên hệ</Link>
+          </li>
         </ul>
         <div onClick={handleNav} className="block md:hidden">
           {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
@@ -42,10 +50,18 @@ const Navbar = () => {
           <h1 className="w-full  text-3xl font-bold text-[#4BA0F0] m-4">
             Nam Tiến Đạt
           </h1>
-          <li className="p-4 border-b border-gray-600">Giới thiệu</li>
-          <li className="p-4 border-b border-gray-600">Sản phẩm</li>
-          <li className="p-4 border-b border-gray-600">Cung cấp than đá</li>
-          <li className="p-4 border-b border-gray-600">Liên hệ</li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Giới thiệu</Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Sản phẩm</Link>
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Cung cấp than đá</Link>{" "}
+          </li>
+          <li className="p-4 border-b border-gray-600">
+            <Link to="/">Liên hệ</Link>
+          </li>
         </ul>
       </div>
     </div>

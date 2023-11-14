@@ -39,8 +39,8 @@ const ArticleGrid = () => {
 
   return (
     <div className="bg-white">
-      <div className="mx-auto max-w-2xl p-4 sm:px-6  lg:max-w-7xl lg:px-8">
-        <p className="text-center text-[#4BA0F0] p-4 sm:p-6 text-xl sm:text-3xl uppercase font-VNProSemi">
+      <div className="mx-auto max-w-2xl p-4 sm:px-6  lg:max-w-7xl lg:px-8 ">
+        <p className="text-center text-[#4BA0F0] p-4 sm:p-6 text-xl sm:text-3xl uppercase font-VNProBold">
           Tin tức
         </p>
 
@@ -50,7 +50,7 @@ const ArticleGrid = () => {
               key={article.id}
               className="group relative p-4 rounded-md border-2 border-slate-100 shadow-sm"
             >
-              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+              <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80 ">
                 <img
                   src={article.image}
                   alt="Article"
@@ -59,11 +59,11 @@ const ArticleGrid = () => {
               </div>
               <div className="mt-4 flex justify-between">
                 <div>
-                  <h3 className="text-sm text-gray-700">
+                  <h3 className="text-base text-gray-700  font-VNProSemi">
                     <span aria-hidden="true" className="absolute inset-0" />
                     {article.title}
                   </h3>
-                  <p className="mt-1 text-sm text-gray-500">
+                  <p className="mt-1 text-sm text-gray-500 font-VNProMedi">
                     {article.description}
                   </p>
                 </div>
