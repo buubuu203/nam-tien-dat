@@ -33,8 +33,11 @@ const actions = [
 
 export default function ContactSpeedDial() {
   return (
-    <div style={{ position: "fixed", bottom: "16px", right: "16px" }}>
-      <Box sx={{ transform: "translateZ(0px)", flexGrow: 1000 }}>
+    <div
+      style={{ position: "fixed", bottom: "16px", right: "16px" }}
+      className="z-10"
+    >
+      <Box sx={{ transform: "translateZ(0px)", flexGrow: 2000 }}>
         <SpeedDial ariaLabel="SpeedDial basic example" icon={<SpeedDialIcon />}>
           {actions.map((action) => (
             <SpeedDialAction
